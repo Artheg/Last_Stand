@@ -90,11 +90,11 @@ public class Unit : MonoBehaviour
         navMeshAgent = gameObject.AddComponent<NavMeshAgent>();
         navMeshAgent.isStopped = true;
         navMeshAgent.speed = Speed;
-        navMeshAgent.acceleration = 1000f;
-        navMeshAgent.radius = 0.5f;
-        navMeshAgent.autoBraking = true;
-        navMeshAgent.autoRepath = true;
-        navMeshAgent.avoidancePriority = 100;
+        navMeshAgent.acceleration = NavMeshUnitParams.ACCELERATION;
+        navMeshAgent.radius = NavMeshUnitParams.RADIUS;
+        navMeshAgent.autoBraking = NavMeshUnitParams.AUTO_BRAKING;
+        navMeshAgent.autoRepath = NavMeshUnitParams.AUTO_REPATH;
+        navMeshAgent.avoidancePriority = NavMeshUnitParams.AVOIDANCE_PRIORITY;
     }
 
     void Update()

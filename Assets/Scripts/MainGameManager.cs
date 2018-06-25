@@ -13,7 +13,6 @@ public class MainGameManager : MonoBehaviour {
     public Material EnemyTeamMaterial;
 
     public Text TimerTF;
-	public Transform EnemySpawnPoint;
 
 	public Fountain Fountain;
 	public Couch Couch;
